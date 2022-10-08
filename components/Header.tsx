@@ -6,7 +6,7 @@ type Props = {}
 
 export default function Header({ }: Props) {
   return (
-    <header className='sticky w-full h-[85px] flex justify-between items-center px-4 max-w-7xl mx-auto'>
+    <header className='fixed w-full h-[85px] flex justify-between items-center px-4 max-w-7xl mx-auto'>
       {/* Social Icons */}
       <motion.div
         initial={{

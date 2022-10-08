@@ -1,13 +1,13 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
-import styles from '../styles/Home.module.css'
+import About from '../components/About';
+import WorkExperience from '../components/WorkExperience'
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.container}>
+    <div className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-scroll z-0">
       <Head>
         <title>Alan Escobedo | Portafolio</title>
         <meta name="description" content="Portafolio de Alan Escobedo, desarrollador JavaScript" />
@@ -15,14 +15,18 @@ const Home: NextPage = () => {
 
       <Header/>
 
-      {/* hero */}
-      <section id='hero'>
+      <section id='hero' className='snap-start'>
         <Hero/>
       </section>
 
-      {/* about */}
+      <section id='about' className='snap-center'>
+        <About/>
+      </section>
 
       {/* Experience */}
+      <section id='experience' className='snap-center'>
+        <WorkExperience/>
+      </section>
 
       {/* Skills */}
 
